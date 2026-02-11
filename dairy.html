@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Молочні вироби — Натуральність та користь</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        a {
+            color: #2980b9 !important;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #3498db !important;
+            text-decoration: underline;
+        }
+
+        .complex-data-table {
+            border: 2px solid #b3e5fc;
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 2px;
+        }
+
+        .header-main {
+            background-color: #b3e5fc !important;
+            color: #2c3e50;
+        }
+
+        .header-sub {
+            background-color: #e1f5fe !important;
+            color: #2c3e50;
+        }
+
+        .row-highlight {
+            background-color: #f0f7fd;
+        }
+
+        .price-label {
+            text-align: right;
+            padding-right: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🥛 Молочна продукція</h1>
+
+    <nav>
+        <a href="index.html" class="nav-link">🏠 Повернутися на головну</a> |
+        <a href="#complex-table" class="nav-link">До таблиці характеристик</a>
+    </nav>
+
+    <p style="background-color: #ffffff; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.05);">
+        Ми пропонуємо: <b>молоко</b>, <i>домашній сир</i>, густий йогурт та справжнє вершкове масло. Наша продукція
+        виготовляється без додавання консервантів.
+    </p>
+
+    <h3>Наші потужності:</h3>
+    <a href="https://milkalliance.com.ua/uploads/gallery_photo/photo/0394/01.jpg" target="_blank">
+        <img src="https://milkalliance.com.ua/uploads/gallery_photo/photo/0394/01.jpg" width="200" height="200"
+            alt="Молоко велике">
+    </a>
+
+    <h2 id="complex-table">Складна таблиця характеристик</h2>
+
+    <table class="complex-data-table">
+        <caption>📊 Параметри свіжості та якості</caption>
+        <colgroup>
+            <col style="background-color: #e1f5fe; width: 40%;">
+            <col style="width: 30%;">
+            <col style="width: 30%;">
+        </colgroup>
+        <thead>
+            <tr class="header-main">
+                <th rowspan="2">Продукт</th>
+                <th colspan="2">Показники</th>
+            </tr>
+            <tr class="header-sub">
+                <th>Жирність</th>
+                <th>Термін зберігання</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Молоко фермерське</td>
+                <td rowspan="2">3.2%</td>
+                <td rowspan="2" class="row-highlight">7 діб</td>
+            </tr>
+            <tr>
+                <td>Кефір</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="price-label">Середня ціна:</td>
+                <td style="background-color: #fffde7; font-weight: bold;">45 грн</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p align="center" style="margin-top: 30px;">
+        <a href="#top" class="nav-link">▲ На початок</a>
+    </p>
+
+</body>
+
+</html>

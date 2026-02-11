@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Свіжі Овочі — Каталог</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        body {
+            background-color: #f1f8e9 !important;
+        }
+
+        h1,
+        h3,
+        caption {
+            color: #1b5e20;
+        }
+
+        .veg-table {
+            border: 2px solid #27ae60;
+            background-color: #ffffff;
+        }
+
+        .veg-table th {
+            background-color: #27ae60 !important;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .wiki-frame {
+            border: 2px dashed #27ae60;
+            border-radius: 10px;
+            width: 100%;
+            height: 450px;
+            margin-top: 20px;
+        }
+        .zoom-img {
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+            cursor: zoom-in;
+        }
+
+        .zoom-img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🥦 Наші Свіжі Овочі</h1>
+
+    <nav>
+        <a href="index.html" class="nav-link">🏠 Повернутися на головну</a> |
+        <a href="#wiki-section" class="nav-link">До енциклопедії овочів</a>
+    </nav>
+
+    <p style="margin: 20px 0; padding: 15px; background: #e8f5e9; border-left: 5px solid #2e7d32;">
+        Овочі — це основа здорового раціону. Ми пропонуємо лише <b>найсвіжіші плоди</b>, зібрані з любов'ю на локальних
+        фермах. Кожен овоч у нашому каталозі — це <i>гарантія вітамінів</i> та натурального смаку.
+    </p>
+
+    <h3>Таблиця асортименту (3x4):</h3>
+    <table class="veg-table">
+        <caption><b>Детальний опис овочевої корзини</b></caption>
+        <thead>
+            <tr>
+                <th>Фото (клік для збільшення)</th>
+                <th>Корисні посилання</th>
+                <th>Характеристики</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCSAzerbc9KJ41BoWlJwD5rftVIoUT9TsR9w&s" target="_blank">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCSAzerbc9KJ41BoWlJwD5rftVIoUT9TsR9w&s" width="150"
+                            height="100" alt="Картопля" class="zoom-img">
+                    </a>
+                </td>
+                <td><a href="https://uk.wikipedia.org/wiki/Картопля">Все про картоплю</a></td>
+                <td>Молода картопля сорту "Беллароза".</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=1200" target="_blank">
+                        <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=300" width="150"
+                            height="100" alt="Помідори" class="zoom-img">
+                    </a>
+                </td>
+                <td><a href="https://uk.wikipedia.org/wiki/Помідор">Секрети томатів</a></td>
+                <td>Помідори Черрі на гілці. Солодкі та ароматні.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://agrarii-razom.com.ua/sites/default/files/byr/morkva_zvichayna.jpg" target="_blank">
+                        <img src="https://agrarii-razom.com.ua/sites/default/files/byr/morkva_zvichayna.jpg" width="150"
+                            height="100" alt="Морква" class="zoom-img">
+                    </a>
+                </td>
+                <td><a href="https://uk.wikipedia.org/wiki/Морква">Користь моркви</a></td>
+                <td>Мита морква сорту "Каротель". Високий вміст каротину.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h3 id="wiki-section">📜 Енциклопедія овочів (Iframe):</h3>
+    <p>Інформація завантажується із зовнішнього ресурсу:</p>
+
+    <iframe src="https://uk.wikipedia.org/wiki/Овочі" class="wiki-frame" name="info-frame">
+        Ваш браузер не підтримує фрейми.
+    </iframe>
+
+    <p align="right" style="margin-top: 20px;">
+        <a href="#top" class="nav-link">На початок сторінки ▲</a>
+    </p>
+
+</body>
+
+</html>
