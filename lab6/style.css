@@ -1,0 +1,142 @@
+body {
+    background-color: #fdfcf0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    margin: 40px;
+    color: #333;
+}
+
+h1, h2, h3, caption {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+}
+
+#main-header {
+    font-size: 36px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+}
+
+.intro-text {
+    font-size: 1.1em;
+    border-left: 4px solid #d35400;
+    padding-left: 15px;
+    font-style: italic;
+}
+
+.nav-link:link {
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:visited {
+    color: #1b5e20;
+}
+
+.nav-link:hover {
+    color: #e67e22 !important;
+    text-decoration: underline;
+}
+
+.nav-link:active {
+    color: #d35400;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li:first-child {
+    border-left: 5px solid #e67e22;
+    padding-left: 15px;
+}
+
+.category-title::before {
+    content: "🌿 ";
+}
+
+.category-title::after {
+    content: " (актуально)";
+    font-size: 0.6em;
+    color: #7f8c8d;
+}
+
+.promo-wrapper {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.featured-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.float-badge {
+    float: right;
+    width: 250px;
+    background: #f1f8e9;
+    border: 2px dashed #27ae60;
+    padding: 15px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.promo-img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    background: #f1c40f;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+.product-info {
+    overflow: hidden;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    background: #27ae60;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.absolute-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #e74c3c;
+    color: white;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+th {
+    background-color: #ffeaa7;
+}
+
+.promo-row {
+    background-color: #fffdf0;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Світ Продуктів - Головна</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="page-body">
+
+    <h1 id="main-header">🛒 Свіжі Продукти Щодня</h1>
+
+    <p class="intro-text">
+        Ласкаво просимо до нашого гастрономічного куточку. Ми віримо, що <b>якісна їжа</b> — це не просто паливо для
+        організму, а справжнє задоволення. Тут ви знайдете лише добірні товари від перевірених фермерів.
+    </p>
+
+    <nav>
+        <h3 class="category-title">Оберіть категорію:</h3>
+        <ul class="nav-list" id="category-list">
+            <li id="top-link">🔹 <a href="vegetables.html" class="nav-link">Каталог свіжих овочів</a></li>
+            <li>🔹 <a href="fruits.html" class="nav-link">Соковиті фрукти та ягоди</a></li>
+            <li>🔹 <a href="dairy.html" class="nav-link">Натуральна молочна продукція</a></li>
+            <li>🌐 <a href="https://www.google.com/search?q=healthy+food" target="_blank" class="nav-link">Шукати
+                    рецепти в Google</a></li>
+            <li>📍 <a href="#offers-table" class="nav-link">Перейти до акцій</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <div class="promo-wrapper">
+        <div class="featured-card">
+            <div class="float-badge">
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=400" alt="Акція"
+                    class="promo-img">
+                <p>Спеціальна пропозиція: <span class="highlight">Еко-пакування</span> безкоштовно для замовлень від 500
+                    грн!</p>
+            </div>
+
+            <div class="product-info">
+                <h3>Продукт тижня: Фермерське молоко</h3>
+                <p>Спробуйте наше нове фермерське молоко 3.2% жирності. Тільки натуральні компоненти та свіжість кожного
+                    дня. Прямі поставки з Полтавщини.</p>
+                <a href="dairy.html" class="cta-button">Замовити зараз</a>
+            </div>
+
+            <div class="absolute-tag">TOP</div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3 id="offers-table">Акційні пропозиції тижня</h3>
+    <table>
+        <caption><b>Топ-товари зі знижкою</b></caption>
+        <thead>
+            <tr>
+                <th>Зображення</th>
+                <th>Назва товару</th>
+                <th>Категорія та опис</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="promo-row">
+                <td>
+                    <a href="fruits.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvbObpX6CYIDn11waczh-gzbiQcLbLlPgHww&s"
+                            width="100" height="100" alt="Яблука">
+                    </a>
+                </td>
+                <td><a href="fruits.html" class="nav-link">Червоні яблука</a></td>
+                <td>Фрукти: Соковиті та хрусткі плоди сорту "Гала".</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400" width="100"
+                        height="100" alt="Хліб">
+                </td>
+                <td><a href="https://uk.wikipedia.org/wiki/Хліб" target="_blank" class="nav-link">Домашній хліб</a></td>
+                <td>Випічка: Свіжоспечений на дровах.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p align="center" style="margin-top: 50px;">
+        <a href="#top" id="top-link" class="nav-link">▲ Повернутися до початку</a>
+    </p>
+
+    <script>
+
+        alert("Вітаємо на головній сторінці!");
+        let visitReason = prompt("Що ви шукаєте сьогодні?", "Овочі");
+        let isSubscriber = confirm("Бажаєте підписатися на оновлення цін?");
+
+
+        const originalBg = document.body.style.backgroundColor;
+        document.body.style.backgroundColor = "#e8f5e9"; 
+
+        setTimeout(() => {
+            document.body.style.backgroundColor = originalBg;
+            console.log("30 секунд минуло, фон повернуто.");
+        }, 30000);
+    </script>
+
+    <script src="script.js"></script>
+
+    <script>
+        window.onload = function () {
+            if (typeof userDialogue === 'function') userDialogue();
+            if (typeof showDeveloperInfo === 'function') showDeveloperInfo("Євтушенко", "Юрій");
+            if (typeof compareStrings === 'function') compareStrings("Магазин овочів", "Фрукти");
+            if (typeof runDOMDemo === 'function') runDOMDemo();
+        };
+    </script>
+</body>
+
+</html>
